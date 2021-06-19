@@ -1,0 +1,150 @@
+.bg-custom {
+    background-color: #F8F9FA !important;
+}
+
+body {
+    overflow-x: hidden !important;
+
+
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flash-div {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 999999999999999999;
+
+    .alert-success {
+        color: #fff;
+        background-color: #00aa4a;
+        border-color: #00aa4a;
+    }
+
+    .alert-danger {
+        color: #fff;
+        background-color: #fa0800;
+        border-color: #fa0800;
+
+    }
+}
+
+.main-content {
+    position: relative;
+    margin-left: 285px;
+}
+
+.panel {
+    padding-bottom: 2rem;
+    border-radius: 8px;
+
+    .panel-header {
+        .display {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    transition: 1s !important;
+    z-index: 9999999;
+
+    .menu-toggle {
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+        z-index: 9999;
+    }
+
+    .sidebar-ul {
+        .nav-link {
+            margin: 3px 4px !important;
+
+            .side-icon {
+                background: #fff !important;
+                padding: 8px;
+                border-radius: 4px;
+                margin: auto 8px auto 4px;
+                background-position: 50%;
+                box-shadow: 0 0.125rem 0.85rem rgba(0, 0, 0, 0.075) !important;
+            }
+
+            .side-caret {
+                float: right !important;
+            }
+        }
+
+        .nav-link {
+            .side-icon {
+                box-shadow: none !important;
+            }
+        }
+
+        .inner-ul {
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            width: 80%;
+            margin: 0 auto;
+
+            .side-icon-inner {
+                font-size: .4rem;
+                padding: auto 4px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+body {
+    font-family: 'Nunito';
+    background-color: #F8F9FA !important;
+}
+
+// members
+#member_no {
+    span.mno_blocks {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin: auto 2px;
+        padding: 12px;
+    }
+}
+
+
+@media(max-width:768px) {
+    .sidebar {
+        left: -280px !important;
+    }
+
+    .sidebar.toggled {
+        left: 0 !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+    }
+
+    #member_no {
+        span.mno_blocks {
+            padding: 8px;
+        }
+    }
+}
+
+div#ofBar {
+    display: none !important;
+}
